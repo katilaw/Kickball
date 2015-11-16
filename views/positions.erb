@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+
+  <body>
+    <h1>
+       Learn more about kickball: Positions
+    </h1>
+
+    <ul>
+      <% @teams["Simpson Slammers"].each do |position, name| %>
+        <li><a href="/positions/<%=position %>"><%= position %></a></li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>
+
+
+ 

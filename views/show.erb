@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+
+  <body>
+    <h1>
+      Welcome to the <%= @teams_info %> Sports Page
+    </h1>
+
+    <ul>
+      <% @teams[@teams_info].each do |position, name| %>
+        <li><%= "Player Name: #{name}  Position: #{position}" %></li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>

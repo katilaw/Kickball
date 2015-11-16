@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+
+  <body>
+    <h1>Premier League of Cool Kickball Professionals</h1>
+
+    <h3> League Teams </h3>
+
+    <ul>
+      <% @teams.each do |team_name,roster| %>
+        <li><a href="/teams/<%=team_name %>"><%= team_name %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>

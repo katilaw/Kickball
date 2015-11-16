@@ -1,0 +1,21 @@
+require 'pry'
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+
+  <body>
+    <h1>
+       League player that are <%= @position_types %>
+    </h1>
+
+    <ul>
+      <li><%= @teams["Simpson Slammers"][@position_types]%></li>
+      <li><%= @teams["Jetson Jets"][@position_types]%></li>
+      <li><%= @teams["Flintstone Fire"][@position_types]%></li>
+      <li><%= @teams["Griffin Goats"][@position_types]%></li>
+    </ul>
+  </body>
+</html>
+binding.pry
