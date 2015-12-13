@@ -1,4 +1,4 @@
-require 'pry'
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,11 +11,9 @@ require 'pry'
     </h1>
 
     <ul>
-      <li><%= @teams["Simpson Slammers"][@position_types]%></li>
-      <li><%= @teams["Jetson Jets"][@position_types]%></li>
-      <li><%= @teams["Flintstone Fire"][@position_types]%></li>
-      <li><%= @teams["Griffin Goats"][@position_types]%></li>
+      <% @teams.each do |team,hash| %>
+          <li><%= hash[@position_types]%></li>
+      <% end %>
     </ul>
   </body>
 </html>
-binding.pry

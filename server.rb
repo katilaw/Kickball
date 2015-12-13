@@ -1,6 +1,7 @@
 require "sinatra"
 
 set :public_folder, File.join(File.dirname(__FILE__), "public")
+
 require 'json'
 file = File.read('roster.json')
 data_hash = JSON.parse(file)
